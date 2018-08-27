@@ -1,1 +1,1 @@
-# https://maiemily.github.io/microsoft/index.html
+# https://maiemily.github.io/microsoft/

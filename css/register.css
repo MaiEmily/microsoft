@@ -1,0 +1,249 @@
+/*
+* @Author: admin
+* @Date:   2018-07-04 13:51:49
+* @Last Modified by:   admin
+* @Last Modified time: 2018-07-04 16:34:59
+*/
+
+html,body{
+	height: 100%;
+}
+
+.WR_wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 370px;
+	background: url('../img/img_login_register/0.jpg') no-repeat;
+	z-index: 10;
+	 
+}
+
+@media(max-width: 600px){
+	.WR_wrap{
+		background:#fff; 
+	}
+}
+
+@media(max-height: 366px){
+	.WR_wrap{
+		background:#fff; 
+	}
+}
+.WR_section {
+	position: relative;
+	width: 100%;
+	height: calc(100% - 27px);
+	height: -moz-calc(100% - 27px);
+	height: -webkit-calc(100% - 27px)
+}
+.WR_register{
+	width: 440px;
+	height: 340px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;
+	background: #fff;
+	padding: 45px;
+	box-sizing: border-box;
+
+}
+
+.WR_logo{
+	margin: 0px;
+	padding: 0px;
+	font-size:20px;
+}
+.WR_logo img{
+
+	height: 24px;
+}
+.WR_h2_register{
+	color: #404040;
+	font-weight: 600;
+	font-size: 24px;
+}
+.WR_input {
+	position: relative;
+}
+.WR_input input{
+	display: inline-block;
+	width: 350px;
+	height: 36px;
+	outline: none;
+	border:none;
+	border-bottom: 1px solid #666666;
+
+}
+.WR_input input:focus{
+	border-bottom-color: #0067b8;
+}
+.WR_alter {
+	margin-top: 16px;
+    color: #262626;
+    font-size: 14px;    
+}
+.WR_alter a{
+	display: block;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.WR_alter a:hover{
+	color: #337ab7;
+	text-decoration: none;
+}
+.WR_button{
+	width: 100%;
+	text-align: right;
+}
+
+.WR_button button.btn-primary{
+	width: 108px;
+	height: 32px;
+	border-radius: 0px;
+	background: #0067b8;
+}
+.WR_button button.btn-primary:hover{
+	background: #005da6;
+}
+
+.WR_register_c{
+	position: initial;
+	max-width: 440px;
+	min-width: 239px;
+	width: 70%;
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 4px;
+}
+.WR_register_c .WR_input input{
+	width: 100%;
+}
+
+/*---------------------------WR_footer*/
+.WR_footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	background: rgba(0,0,0,0.6);
+	text-align: right;
+	
+}
+
+.WR_footer a{
+	display: inline-block;
+	font-size: 12px;
+	color: #fff;
+	font-weight: 600;
+	margin: 0px 8px;
+	padding: 5px 0px;
+	white-space: nowrap;
+}
+.WR_footer a:hover{
+	text-decoration: none;
+}
+
+.WR_footer_c{
+	padding-left: 15px;
+	position: relative;
+	text-align: left;
+	background: #fff;
+	
+}
+.WR_footer_c a{
+	color: #777;
+}
+.WR_prompt{
+	color: red;
+	display: none;
+}
+.WR_place p{
+	position: relative;
+	color: #000;
+    font-size: 15px;
+    line-height: 31px;
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+	
+}
+.WR_place p:hover{
+	border-color: #000;
+}
+.WR_place p b{
+	position: absolute;
+    right: 5px;
+    top: 50%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: #000;
+}
+
+.WR_addr{
+	position: absolute;
+	right: 5px;
+	top: 8px;
+	cursor: pointer;
+	font-size: 14px;
+	
+}
+.WR_addr i{
+	display: inline-block;
+	width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    margin-left: 7px;
+    margin-top: -5px;
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.WR_addr_select{
+	position: absolute;
+	right: 0px;
+	padding: 10px 0px;
+	border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    background: white;
+    display: none;
+    
+}
+.WR_addr_select ul{
+	margin: 0;
+}
+.WR_addr_select ul li{
+	padding: 5px 50px 5px 20px;
+	margin-bottom: 5px;
+}
+.WR_addr_select ul li:hover{
+	background-color: #f5f5f5;
+}
+
+.WR_place_con{
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	background: #fff;
+	width: 100%;
+	height: 166px;
+	overflow: auto;	
+	border: 1px solid #0067b8;
+	border-top-width: 2px;
+	display: none;
+}
+.WR_place_con ul li:hover{
+	background: #0067b8;
+	color: #fff;
+	cursor: pointer;
+}
+
+
